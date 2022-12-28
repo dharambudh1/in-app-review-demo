@@ -123,29 +123,36 @@ class _HomePageState extends State<HomeScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.85,
-                  child: ElevatedButton(
-                    onPressed: () async {
-                      final bool isSupported = await RatingSingleton()
-                          .isNativeReviewDialogSupportedFunction();
-                      isSupported
-                          ? await RatingSingleton()
-                              .launchNativeReviewDialogFunction()
-                          : RatingSingleton().showSnackBarFunction(
-                              "Launch of Native Review Dialog is Unsupported.",
-                            );
-                    },
-                    child:
-                        const Text("Open Native Review Dialog (If Supported)"),
+                Align(
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        final bool isSupported = await RatingSingleton()
+                            .isNativeReviewDialogSupportedFunction();
+                        isSupported
+                            ? await RatingSingleton()
+                                .launchNativeReviewDialogFunction()
+                            : RatingSingleton().showSnackBarFunction(
+                                "Native Review Dialog is Unsupported.",
+                              );
+                      },
+                      child: const Text(
+                        "Open Native Review Dialog (If Supported)",
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.85,
-                  child: ElevatedButton(
-                    onPressed: RatingSingleton().launchStoreFunction,
-                    child: Text("Open $storeName Store Application"),
+                Align(
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: ElevatedButton(
+                      onPressed: RatingSingleton().launchStoreFunction,
+                      child: Text(
+                        "Open $storeName Store Application",
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 20),
