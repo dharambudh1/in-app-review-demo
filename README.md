@@ -1,16 +1,9 @@
-# in_app_review_demo
+# In-App Review Demo
 
-A new Flutter project.
+## Description:
+- This demo application allows developers to kindly ask their users to rate their application if custom conditions are met (For example, install time, number of launches, etc.). You can even add your constraints as well.
 
-## Getting Started
+To Know more & read the official documentation, visit: https://pub.dev/packages/rate_my_app
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+![alt text](https://i.postimg.cc/XJKZLDxd/imgonline-com-ua-twotoone-s-INpfh-LD3n-Kr.png "img")
